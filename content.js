@@ -89,6 +89,51 @@ const TOPICS = [
           "Picture two identical-looking bricks on a table. One is mortar, one is Styrofoam. Without lifting them, give each an identical push. The brick that offers the least resistance to the change is the one with the least inertia, and therefore the least mass — the Styrofoam one."
         ],
         callout: "Inertia depends on mass and nothing else. Not speed. Not direction. Mass."
+      },
+      {
+        heading: "The one that trips everyone up: speed is not inertia",
+        body: [
+          "A fast-moving object feels harder to stop than a slow one, so it seems obvious that going faster should mean more inertia. It doesn't. Speed and inertia are two different things.",
+          "Inertia is how strongly an object resists a change in its state of motion, and that resistance is set by mass alone. Throw a tennis ball slowly or hurl it as hard as you can — it is the same ball, with the same mass, and the same inertia both times. What changed is how much motion you have to take away to stop it, not how stubborn the ball is.",
+          "So when Mac says flinging the Jell-O faster gives it greater inertia, he is wrong, and Tosh is right — fully right, not half right. Inertia depends upon mass, not upon speed. The only way to give the Jell-O more inertia is to use more Jell-O."
+        ],
+        callout: "If the question asks what changes an object's inertia, the answer is always mass."
+      },
+      {
+        heading: "The practice sheet, worked through",
+        body: [
+          "These are the six questions from the inertia practice exercises, with the reasoning behind each answer. Check these against what you wrote."
+        ],
+        numbered: {
+          label: "Answers and why",
+          items: [
+            {
+              head: "Throw a rock far from all gravity and friction → B, it keeps going.",
+              text: "It continues in motion in the same direction at constant speed. With no unbalanced force acting on it, nothing can change its state of motion, so it never slows down."
+            },
+            {
+              head: "Force needed to keep a 2-kg object moving at 4 m/s → B, 0 Newtons.",
+              text: "None at all. Force is only needed to change a state of motion, never to maintain one. Thinking a force is required to keep something moving is exactly the pre-Newton idea the first law overturned."
+            },
+            {
+              head: "Mac and Tosh on the Jell-O → Tosh is right.",
+              text: "Not partly right, and not both right. Inertia does not depend upon speed, only upon mass. Mac's claim that greater speed means greater inertia is simply wrong. This is the single most commonly missed idea in the unit."
+            },
+            {
+              head: "Does it take a force to set an object moving in a weightless environment? → Yes.",
+              text: "Weightlessness means gravity is not pulling on the object. It does not mean the object has no mass. It still has mass, so it still has inertia, so a force is still required to change its state of motion."
+            },
+            {
+              head: "Fred eating on the sofa every Sunday → his inertia increases.",
+              text: "Eating increases his mass. Because mass is the measure of inertia, more mass means more inertia. Say both halves: the mass goes up, and therefore so does the inertia. Stopping at \"he gains mass\" leaves out the part the question is actually asking about."
+            },
+            {
+              head: "Benny zigzagging away from the moose → the moose can't change direction quickly.",
+              text: "The moose's enormous mass gives it enormous inertia, so it strongly resists any change in its state of motion — including a change in direction. Benny has far less mass and far less inertia, so he can cut left and right easily while the moose carries on in the direction it was already going. Changing direction is a change in state of motion, which is the link back to the first law."
+            }
+          ]
+        },
+        callout: "Two answers to say in full: Fred gains mass AND therefore inertia; the moose resists changing direction because its mass gives it inertia."
       }
     ]
   },
@@ -491,6 +536,42 @@ const QUESTIONS = [
     ],
     answer: 0,
     why: "Resistance to a change in state of motion is inertia, and inertia is measured by mass. The brick that barely resists has the least inertia and therefore the least mass."
+  },
+  {
+    topic: "inertia",
+    q: "A bowling ball rolls slowly down the lane. A ping-pong ball is fired across the room much faster. Which has more inertia?",
+    choices: [
+      "The ping-pong ball, because it is moving faster",
+      "The bowling ball, because it has more mass",
+      "They have the same inertia because both are moving",
+      "Whichever one travels farther"
+    ],
+    answer: 1,
+    why: "Speed has nothing to do with it. Inertia is set by mass alone, and the bowling ball has far more mass — so it has far more inertia even though it is moving slower."
+  },
+  {
+    topic: "inertia",
+    q: "You throw the same baseball twice: once gently, once as hard as you can. How does its inertia compare between the two throws?",
+    choices: [
+      "Greater on the hard throw",
+      "Greater on the gentle throw",
+      "Exactly the same both times",
+      "It depends how far it travels"
+    ],
+    answer: 2,
+    why: "It is the same ball with the same mass, so it has the same inertia both times. Throwing it harder changes its speed, not its resistance to a change in its state of motion."
+  },
+  {
+    topic: "inertia",
+    q: "Which of these would actually increase an object's inertia?",
+    choices: [
+      "Speeding it up",
+      "Changing its direction",
+      "Adding more mass to it",
+      "Moving it to a place with less gravity"
+    ],
+    answer: 2,
+    why: "Mass is the only thing inertia depends on, so the only way to increase it is to add mass. Speed and direction describe the object's motion, and gravity affects weight — none of those change inertia."
   },
 
   /* ---------------- Mass ---------------- */
