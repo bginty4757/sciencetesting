@@ -287,6 +287,253 @@ const TOPICS = [
         ]
       }
     ]
+  },
+
+  /* ---------------------------------------------------------------- */
+  {
+    id: "second-law",
+    title: "Newton's Second Law",
+    blurb: "F = ma — what a net force actually does to an object.",
+    sections: [
+      {
+        heading: "From the first law to the second",
+        body: [
+          "The first law told you that the motion of an object will not change unless a net force acts on it — the brakes on a car, or a fast-moving hockey stick. It tells you when motion changes, but not by how much.",
+          "That is the gap the second law fills. Mass, force and acceleration are all related, and the second law is the rule that connects them."
+        ]
+      },
+      {
+        heading: "The second law in words",
+        body: [
+          "A net force acting on an object causes the object to accelerate in the direction of the force.",
+          "The acceleration of the object is affected by two factors: the size of the force, and the mass of the object. The larger the force acting on an object, the greater the acceleration of the object. The larger an object's mass, the greater the force needed to give it the same acceleration."
+        ],
+        law: true,
+        callout: "Direction matters: the object accelerates in the direction of the force."
+      },
+      {
+        heading: "The second law as an equation",
+        body: [
+          "Force = mass × acceleration, written F = ma. Mass is expressed in kilograms and acceleration in m/s².",
+          "This is also where the newton comes from. The newton is the amount of force needed to give an object having a mass of 1 kg an acceleration of 1 m/s². In other words, 1 N = 1 kg · 1 m/s².",
+          "Think back to the car stalled on the train tracks. To get the greatest acceleration across the tracks, you want to push the smallest mass while exerting the greatest force. So you will want to push the compact car, and you will want the weightlifter to help you exert the strongest force."
+        ],
+        callout: "F = ma. Rearranged: a = F ÷ m, and m = F ÷ a."
+      },
+      {
+        heading: "How to work an F = ma problem",
+        body: [
+          "Every one of these problems is the same four steps. Write them out every time — most lost points come from skipping straight to the arithmetic.",
+          "Watch for the trick in these problems: when a problem gives you two masses, such as a rider and a motorcycle, add them together first. The force has to accelerate everything that is moving."
+        ],
+        numbered: {
+          label: "The four steps",
+          items: [
+            { head: "List what you are given.", text: "Write the mass in kilograms and the acceleration in m/s². If there is more than one mass, add them." },
+            { head: "Write what you are looking for.", text: "Force, mass, or acceleration — mark the one the question is asking for." },
+            { head: "Write the formula.", text: "F = m · a, then rearrange it if you are solving for mass or acceleration." },
+            { head: "Substitute and solve.", text: "Put the numbers in, do the arithmetic, and label the answer with its unit: N for force, kg for mass, m/s² for acceleration." }
+          ]
+        }
+      },
+      {
+        heading: "The worked example from the packet",
+        body: [
+          "How much force is needed to accelerate a 70 kg rider on a 200 kg motorcycle at a rate of 4 m/s²?",
+          "Mass: 70 kg + 200 kg = 270 kg. Acceleration: 4 m/s². Force: unknown.",
+          "F = m · a → F = 270 kg · 4 m/s² → F = 1080 N.",
+          "Notice the two masses were added before anything else happened. The force has to move the rider and the motorcycle together."
+        ],
+        callout: "Add the masses first, then multiply."
+      },
+      {
+        heading: "The two practice problems, worked through",
+        body: [
+          "These are the practice problems at the bottom of the packet. Try them on paper first, then check against the steps here."
+        ],
+        numbered: {
+          label: "Practice problems",
+          items: [
+            {
+              head: "Problem 1 → 3480 N.",
+              text: "It takes 3000 N to accelerate an empty 1000 kg car at 3 m/s². A 160 kg wrestler gets in; what force gives the same acceleration? New mass = 1000 + 160 = 1160 kg. Acceleration is still 3 m/s². F = 1160 · 3 = 3480 N. The check that it holds together: the empty car needed 1000 · 3 = 3000 N, which is exactly the number the problem gave you."
+            },
+            {
+              head: "Problem 2 → about 4.76 m/s².",
+              text: "A 63 kg skater pushes off a wall with a force of 300 N. This one asks for acceleration, so rearrange: a = F ÷ m = 300 N ÷ 63 kg = 4.76 m/s². Dividing instead of multiplying is the whole point of the question — if you multiply you get 18,900, which is far too large for a person pushing off a wall."
+            }
+          ]
+        },
+        callout: "Asked for acceleration? Divide. a = F ÷ m."
+      },
+      {
+        heading: "Falling objects",
+        body: [
+          "Drop a bowling ball and a marble from a bridge at the same time and they both splash into the water at exactly the same moment. People often expect the bowling ball to land sooner because it is heavier. It doesn't.",
+          "The bowling ball does have a greater force of gravity pulling on it, because its mass is larger. But its larger mass also gives it more inertia, so more force is needed to change its velocity. The marble, having a smaller mass, has less inertia and therefore requires less force to accelerate. The two effects cancel, and everything falls at the same rate.",
+          "Near Earth's surface, gravity causes all falling objects to accelerate at a rate of 9.81 m/s². That means all falling objects experience an increase in velocity of 9.81 m/s every second that it is falling."
+        ],
+        terms: [
+          { term: "Acceleration due to gravity (g)", def: "9.81 m/s², the same for all objects regardless of mass." }
+        ],
+        callout: "A heavy object and a light object hit the ground together. Gravity accelerates all matter at the same rate."
+      },
+      {
+        heading: "Finding weight with the formula",
+        body: [
+          "Weight is a force, so you can substitute W for F in F = ma and rewrite the formula as W = ma. Since the acceleration is always gravity, 9.81 m/s², this becomes W = m · 9.81 m/s². This is why a 1 kg mass weighs 9.81 newtons here on Earth.",
+          "To do this yourself on an ordinary bathroom scale: convert your mass from pounds to kilograms, then multiply by 9.81.",
+          "The packet's example — a 100 pound person converts to about 45 kg. W = 45 kg · 9.81 m/s² = 441.45 N.",
+          "Be careful with the words here. Pounds and kilograms are not the same kind of quantity: the kilogram figure is mass, and the newton figure is weight. The scale gives you one, the formula gives you the other."
+        ],
+        callout: "W = m · 9.81 m/s². Mass in kilograms goes in, weight in newtons comes out."
+      }
+    ]
+  },
+
+  /* ---------------------------------------------------------------- */
+  {
+    id: "resistance",
+    title: "Resistance, Stress & Pressure",
+    blurb: "What pushes back — and what a force does to the object it acts on.",
+    sections: [
+      {
+        heading: "Resistance",
+        body: [
+          "Take two identical sheets of paper, crumple one into a ball, and drop them both from a balcony at the same time. The crumpled ball falls faster than the flat sheet. But gravity accelerates all samples of matter at the same rate — so how can both be true?",
+          "The only explanation is that there is an additional force acting on these two objects resisting the force of gravity. That force is resistance.",
+          "Resistance is a force that disrupts motion."
+        ],
+        terms: [
+          { term: "Resistance", def: "A force that disrupts motion." }
+        ]
+      },
+      {
+        heading: "The four types of resistance",
+        body: [
+          "The packet names four. Expect to be asked to recognize an example and name which type it is."
+        ],
+        numbered: {
+          label: "Four types",
+          items: [
+            {
+              head: "Resistance of gases (air resistance)",
+              text: "A force imposed on objects to disrupt their motion while in air. The amount of air resistance depends on the speed, size and shape of the object. The larger the object, the greater the amount of air resistance. If you hold your hand out the window of a moving car, the more you expose it to the oncoming air, the more it will exert motion against it."
+            },
+            {
+              head: "Resistance of liquid (water)",
+              text: "Water also disrupts motion. Because of this resistance it is hard to walk quickly in water. To eliminate some of this resistance, fish are shaped slim, flat and arched."
+            },
+            {
+              head: "Heat and electricity",
+              text: "Heat is conducted along a wall, along a pipe, or through the air. Electricity moves along a wire. Some materials resist heat better than others — a good resistor of heat is called an insulator, which is why insulation goes in the walls and roofs of homes. Electrical resistance is a force that disrupts the flow of electricity. Poor resistors are called conductors, and most metals are good conductors of electricity."
+            },
+            {
+              head: "Solids (friction)",
+              text: "Solid objects also share a resisting or disruptive motion. If you tried to pull a piece of heavy furniture across the floor, you would find that the floor disrupts the motion. In other words, friction is created. Friction can also be helpful — it is the friction between our shoes and the ground that makes it possible for us to walk."
+            }
+          ]
+        },
+        callout: "Four kinds: gases (air), liquid (water), heat and electricity, and solids (friction)."
+      },
+      {
+        heading: "Measuring resistance",
+        body: [
+          "Since resistance is a force, the units of resistance are the same as the units of force.",
+          "Suppose the wind is trying to disrupt an object being pushed along by a 5 kg force, but because of the resistance of the air, the object only moves as though 4 kg of force were pushing it. The resistance of air on this object must be 1 kg, or 9.81 N.",
+          "Another example: if you pull a cart with a force of 2 kg and it doesn't move, then the friction force resisting the motion must be 2 kg, or 19.62 N.",
+          "Both of those conversions are just W = m · 9.81 again. One kilogram of force is 9.81 newtons; two kilograms is 19.62 newtons."
+        ],
+        callout: "Resistance is a force, so it is measured in newtons."
+      },
+      {
+        heading: "Terminal velocity",
+        body: [
+          "As an object falls, air resistance gradually increases until it equals the pull of gravity. When this happens, the two forces are balanced.",
+          "According to the law of inertia, when the forces acting on an object are balanced, the motion of the object will not change. So the falling object will stop accelerating. It will continue to fall, but at a constant, final velocity.",
+          "Terminal velocity is the highest velocity reached by a falling object."
+        ],
+        terms: [
+          { term: "Terminal velocity", def: "The highest velocity reached by a falling object, once air resistance balances gravity." }
+        ],
+        callout: "At terminal velocity the object is still falling — it just stops speeding up."
+      },
+      {
+        heading: "Stress",
+        body: [
+          "Most crafts involve pulling, pressing, stretching, deforming and breaking of different materials. If we were to compare these materials, we would find that clay is easy to compress as opposed to a piece of lead. A wooden stick is easy to break if we try to bend it, while a piece of wire bends into just about any shape we wish. A string breaks if we pull hard enough on it, but a rubber band will stretch before it breaks.",
+          "Any time we try to deform an object, it resists a change to its form. If a force tries to deform an object instead of moving it, the body is said to be under stress.",
+          "Stress is defined as an internal force that resists a change in the form of a body. So force is applied at a certain point outside the body; stress resists the force within the body.",
+          "This matters well beyond crafts. If we were not calculating stress properly, buildings, bridges, and even the stools you are currently sitting on would collapse as a result of the tension and compression forces."
+        ],
+        terms: [
+          { term: "Stress", def: "An internal force that resists a change in the form of a body." }
+        ],
+        callout: "Force comes from outside the body. Stress is the body resisting from within."
+      },
+      {
+        heading: "The three varieties of stress",
+        body: [
+          "Stress is a distributed force over a unit area, and it comes in three varieties."
+        ],
+        numbered: {
+          label: "Tension, compression, shear",
+          items: [
+            { head: "Tension is the result of a pulling force.", text: "A lamp hanging from a beam on the ceiling subjects the beam to tension because it is pulling on it. The chain supporting the lamp is also subjected to tension." },
+            { head: "Compression results from a pushing force.", text: "The pillars supporting a roof of a building are in compression because the roof is pushing on them." },
+            { head: "Shear is due to forces acting along the surface of a body.", text: "The surface of blackboard erasers are under shear stresses because the friction forces act along the surface as you rub." }
+          ]
+        },
+        callout: "Pulling is tension. Pushing is compression. Rubbing along a surface is shear."
+      },
+      {
+        heading: "Calculating stress",
+        body: [
+          "Since the whole area of a body resists deforming forces, the units of stress are expressed as force per unit area. When stress measurements are taken, they are expressed as grams or kilograms per square centimeter.",
+          "The formula is stress = force ÷ area. All three of the packet's examples are that one division."
+        ],
+        numbered: {
+          label: "The packet's three examples",
+          items: [
+            { head: "Tension → 2 grams per square centimeter.", text: "A hanging lamp weighs 50 grams and hangs from a beam with a cross section area of 25 square centimeters. 50 ÷ 25 = 2 g/cm²." },
+            { head: "Compression → 1000 kilograms per square meter.", text: "A pillar with a one square meter area supports a portion of roof compressing it with a force of 1000 kilograms. 1000 ÷ 1 = 1000 kg/m²." },
+            { head: "Shear → one fiftieth of a kilogram per square centimeter.", text: "An eraser with a surface area of 50 square centimeters is pushed with a 1 kilogram force. 1 ÷ 50 = 1/50 kg/cm², or 0.02 kg/cm²." }
+          ]
+        },
+        callout: "Stress = force ÷ area. The answer always carries a 'per unit area' label."
+      },
+      {
+        heading: "Pressure",
+        body: [
+          "We use the word pressure often — we're always under pressure to do well in school, to act on a dare, or for any other reason. But is this really pressure?",
+          "Picture a barrel full of water. If we put the cork on the bottom the water will flow out. Now let's poke a hole in the side of the barrel, and the water starts flowing out of this also. Water would start flowing no matter where we put the hole, except on top.",
+          "Try a similar experiment with gases. No matter where we put a hole in a balloon the air or gas would force its way out. So, we can conclude that liquids and gases apply forces to their containers. These forces do not act at any one point but over the entire area. That is how we define the force of a liquid or gas on an area as pressure.",
+          "Pressure acts in all directions. This is the reason the water and air coming through any opening is under pressure."
+        ],
+        terms: [
+          { term: "Pressure", def: "The force of a liquid or gas distributed over an entire area rather than acting at one point." }
+        ],
+        callout: "Pressure acts in all directions, over an entire area — not at a single point."
+      },
+      {
+        heading: "Atmospheric pressure",
+        body: [
+          "Earth's atmosphere extends a very long way beyond the planet. At high altitudes, atoms and molecules are very far apart. Closer to Earth, these atoms and molecules come closer together due to the pressure of the mass of air above them.",
+          "As the atoms and molecules become more closely packed, they exert greater force. The mass of air presses down on Earth's surface where pressure is greatest, with a force of 10.1 newtons per square centimeter. This is known as atmospheric pressure.",
+          "Atmospheric pressure is greatest at sea level and decreases outward from the Earth. That follows directly from the packing: the lower you go, the more air is stacked above you.",
+          "Although liquids are practically incompressible, they do apply pressure. As we go below the surface of any body of water, the amount of water above us gets larger, thus increasing the pressure on us. Gases are different — we can pump them into containers that are empty or full of liquid. We use gases to pressurize cans, bottles, tires, balloons and fire extinguishers. The pressure of gases can also be reduced to create a vacuum."
+        ],
+        list: {
+          label: "Instruments that measure pressure",
+          items: [
+            "A manometer",
+            "A barometer",
+            "An altimeter"
+          ]
+        },
+        callout: "Greatest at sea level, decreasing with altitude — because pressure comes from the weight of air above you."
+      }
+    ]
   }
 ];
 
@@ -321,7 +568,36 @@ const FLASHCARDS = [
   { topic: "forces", front: "The Newton (N)", back: "The metric unit of force. One Newton gives a 1-kg mass an acceleration of 1 m/s². 1 N = 1 kg · m/s²." },
   { topic: "forces", front: "Vector quantity", back: "A quantity with both magnitude and direction. Force is a vector, so \"10 N downward\" is complete but \"10 N\" is not." },
   { topic: "forces", front: "Free-body diagram", back: "A diagram showing the object as a box with a labeled arrow for every force acting on it. Arrow size shows magnitude; arrow direction shows direction." },
-  { topic: "forces", front: "Normal force", back: "The upward push a surface exerts on an object resting on it — the table pushing up on the book." }
+  { topic: "forces", front: "Normal force", back: "The upward push a surface exerts on an object resting on it — the table pushing up on the book." },
+
+  { topic: "second-law", front: "Newton's second law in words", back: "A net force acting on an object causes the object to accelerate in the direction of the force." },
+  { topic: "second-law", front: "Newton's second law as an equation", back: "Force = mass × acceleration, or F = ma. Mass in kilograms, acceleration in m/s²." },
+  { topic: "second-law", front: "The two factors that affect acceleration", back: "The size of the force and the mass of the object. More force means more acceleration; more mass means more force is needed for the same acceleration." },
+  { topic: "second-law", front: "Solving for acceleration", back: "Rearrange F = ma to a = F ÷ m. Divide the force by the mass." },
+  { topic: "second-law", front: "Solving for mass", back: "Rearrange F = ma to m = F ÷ a. Divide the force by the acceleration." },
+  { topic: "second-law", front: "1 newton equals", back: "The force needed to give a 1 kg mass an acceleration of 1 m/s². 1 N = 1 kg · 1 m/s²." },
+  { topic: "second-law", front: "A problem gives you two masses — what first?", back: "Add them. The force has to accelerate everything that is moving, like a rider plus the motorcycle." },
+  { topic: "second-law", front: "Acceleration due to gravity", back: "9.81 m/s². All falling objects gain 9.81 m/s of velocity every second they fall, whatever their mass." },
+  { topic: "second-law", front: "Why do a bowling ball and a marble land together?", back: "The bowling ball has more gravity pulling on it, but its greater mass also gives it more inertia. The two effects cancel out." },
+  { topic: "second-law", front: "The weight formula", back: "W = m · 9.81 m/s². Mass in kilograms goes in; weight in newtons comes out." },
+  { topic: "second-law", front: "What does a 1 kg mass weigh on Earth?", back: "9.81 newtons." },
+
+  { topic: "resistance", front: "Resistance", back: "A force that disrupts motion." },
+  { topic: "resistance", front: "The four types of resistance", back: "Gases (air), liquid (water), heat and electricity, and solids (friction)." },
+  { topic: "resistance", front: "Why does crumpled paper fall faster than a flat sheet?", back: "Gravity pulls both the same, but the flat sheet meets more air resistance. The difference is resistance, not gravity." },
+  { topic: "resistance", front: "What does air resistance depend on?", back: "The speed, size and shape of the object. Larger objects meet more air resistance." },
+  { topic: "resistance", front: "Insulator vs conductor", back: "An insulator is a good resistor — it resists heat or electricity. A conductor is a poor resistor, so heat or electricity moves through it easily. Most metals are conductors." },
+  { topic: "resistance", front: "Terminal velocity", back: "The highest velocity reached by a falling object, once air resistance has grown until it balances gravity." },
+  { topic: "resistance", front: "Why does a falling object stop accelerating?", back: "Air resistance increases until it equals the pull of gravity. The forces become balanced, so by the law of inertia the motion stops changing." },
+  { topic: "resistance", front: "Stress", back: "An internal force that resists a change in the form of a body." },
+  { topic: "resistance", front: "The three varieties of stress", back: "Tension (pulling), compression (pushing), and shear (forces acting along a surface)." },
+  { topic: "resistance", front: "Tension", back: "Stress from a pulling force — a lamp hanging from a beam puts the beam and chain under tension." },
+  { topic: "resistance", front: "Compression", back: "Stress from a pushing force — pillars holding up a roof are in compression." },
+  { topic: "resistance", front: "Shear", back: "Stress from forces acting along the surface of a body — a blackboard eraser being rubbed across the board." },
+  { topic: "resistance", front: "How is stress calculated?", back: "Stress = force ÷ area. The units are force per unit area, such as grams or kilograms per square centimeter." },
+  { topic: "resistance", front: "Pressure", back: "The force of a liquid or gas spread over an entire area rather than acting at one point. It acts in all directions." },
+  { topic: "resistance", front: "Atmospheric pressure at sea level", back: "10.1 newtons per square centimeter — and it is greatest at sea level, decreasing with altitude." },
+  { topic: "resistance", front: "Three instruments that measure pressure", back: "A manometer, a barometer, and an altimeter." }
 ];
 
 /* ===========================================================================
@@ -941,5 +1217,447 @@ const QUESTIONS = [
     ],
     answer: 1,
     why: "The force of gravity exerts a downward force and the floor exerts an upward force. They are equal in magnitude and opposite in direction, so they balance and the person maintains their state of motion."
+  },
+
+  /* ---------------- Newton's Second Law ---------------- */
+  {
+    topic: "second-law",
+    q: "Newton's second law of motion states that:",
+    choices: [
+      "An object at rest stays at rest unless acted on by a force",
+      "A net force acting on an object causes it to accelerate in the direction of the force",
+      "Every action has an equal and opposite reaction",
+      "Mass can never be created or destroyed"
+    ],
+    answer: 1,
+    why: "That is the second law in words. The first law tells you that motion changes only when a net force acts; the second law tells you how much it changes, and in which direction."
+  },
+  {
+    topic: "second-law",
+    q: "Newton's second law written as an equation is:",
+    choices: ["F = ma", "F = m ÷ a", "a = mF", "m = Fa"],
+    answer: 0,
+    why: "Force = mass × acceleration. Mass is expressed in kilograms and acceleration in m/s², which gives force in newtons."
+  },
+  {
+    topic: "second-law",
+    q: "Which two factors affect the acceleration of an object?",
+    choices: [
+      "The size of the force and the mass of the object",
+      "The weight of the object and how long the force acts",
+      "The speed of the object and its direction",
+      "The volume of the object and the surface it sits on"
+    ],
+    answer: 0,
+    why: "The larger the force, the greater the acceleration. The larger the mass, the greater the force needed to produce that same acceleration."
+  },
+  {
+    topic: "second-law",
+    q: "In which direction does an object accelerate when a net force acts on it?",
+    choices: [
+      "Always downward",
+      "In the direction of the force",
+      "Opposite the direction of the force",
+      "In whatever direction it was already moving"
+    ],
+    answer: 1,
+    why: "The second law says the object accelerates in the direction of the force. Force is a vector, so its direction is part of the answer."
+  },
+  {
+    topic: "second-law",
+    q: "You need to push a stalled car across train tracks as quickly as possible. What gives you the greatest acceleration?",
+    choices: [
+      "The largest mass with the smallest force",
+      "The smallest mass with the greatest force",
+      "The largest mass with the greatest force",
+      "Mass makes no difference, only force"
+    ],
+    answer: 1,
+    why: "Acceleration goes up when force goes up and down when mass goes up. So push the compact car rather than the SUV, and get the weightlifter to help."
+  },
+  {
+    topic: "second-law",
+    q: "What force is needed to accelerate a 50 kg object at 2 m/s²?",
+    choices: ["25 N", "52 N", "100 N", "200 N"],
+    answer: 2,
+    why: "F = m · a = 50 kg · 2 m/s² = 100 N. Multiply the mass by the acceleration."
+  },
+  {
+    topic: "second-law",
+    q: "A 70 kg rider sits on a 200 kg motorcycle. What force is needed to accelerate them at 4 m/s²?",
+    choices: ["280 N", "800 N", "1080 N", "270 N"],
+    answer: 2,
+    why: "Add the masses first: 70 + 200 = 270 kg. Then F = 270 · 4 = 1080 N. Forgetting to add the rider's mass is the usual mistake."
+  },
+  {
+    topic: "second-law",
+    q: "It takes 3000 N to accelerate an empty 1000 kg car at 3 m/s². A 160 kg wrestler gets in. What force now gives the same acceleration?",
+    choices: ["3000 N", "3160 N", "3480 N", "480 N"],
+    answer: 2,
+    why: "The new mass is 1000 + 160 = 1160 kg, and the acceleration is still 3 m/s². F = 1160 · 3 = 3480 N. Adding 160 to the force instead of the mass gives 3160 N, which is the trap."
+  },
+  {
+    topic: "second-law",
+    q: "A 63 kg skater pushes off a wall with a force of 300 N. What is the skater's acceleration?",
+    choices: ["18,900 m/s²", "4.76 m/s²", "363 m/s²", "0.21 m/s²"],
+    answer: 1,
+    why: "The question asks for acceleration, so rearrange: a = F ÷ m = 300 ÷ 63 = 4.76 m/s². Multiplying instead of dividing gives 18,900, which is nowhere near reasonable for a person pushing off a wall."
+  },
+  {
+    topic: "second-law",
+    q: "If you know the force and the mass, how do you find the acceleration?",
+    choices: [
+      "Multiply the force by the mass",
+      "Divide the force by the mass",
+      "Divide the mass by the force",
+      "Subtract the mass from the force"
+    ],
+    answer: 1,
+    why: "F = ma rearranges to a = F ÷ m. Whenever the unknown is on the right side of the formula, you divide."
+  },
+  {
+    topic: "second-law",
+    q: "One newton is defined as the force needed to:",
+    choices: [
+      "Lift a 1 kg mass off the ground",
+      "Give a 1 kg mass an acceleration of 1 m/s²",
+      "Move a 1 kg mass one meter",
+      "Hold a 1 kg mass still"
+    ],
+    answer: 1,
+    why: "1 N = 1 kg · 1 m/s². The newton comes straight out of F = ma with a mass of 1 kg and an acceleration of 1 m/s²."
+  },
+  {
+    topic: "second-law",
+    q: "A bowling ball and a marble are dropped from a bridge at the same moment. What happens?",
+    choices: [
+      "The bowling ball splashes down well before the marble",
+      "The marble splashes down first because it is smaller",
+      "They splash down at exactly the same time",
+      "The bowling ball falls at 9.81 m/s² and the marble falls slower"
+    ],
+    answer: 2,
+    why: "They land together. The bowling ball has more gravitational force on it, but its greater mass also gives it more inertia, so more force is needed to change its velocity. The two effects cancel."
+  },
+  {
+    topic: "second-law",
+    q: "At what rate does gravity accelerate falling objects near Earth's surface?",
+    choices: ["9.81 m/s²", "9.81 m/s", "1 m/s²", "It depends on the object's mass"],
+    answer: 0,
+    why: "9.81 m/s², and it is the same for every object regardless of mass. The units are m/s² because it is an acceleration — the velocity increases by 9.81 m/s every second."
+  },
+  {
+    topic: "second-law",
+    q: "A falling object has been falling for one second. Its velocity has increased by:",
+    choices: ["1 m/s", "9.81 m/s", "9.81 m/s²", "It depends on its mass"],
+    answer: 1,
+    why: "Accelerating at 9.81 m/s² means gaining 9.81 m/s of velocity every second. The acceleration carries the m/s² label; the velocity gained carries m/s."
+  },
+  {
+    topic: "second-law",
+    q: "What is the formula for finding weight?",
+    choices: [
+      "W = m ÷ 9.81 m/s²",
+      "W = m · 9.81 m/s²",
+      "W = m + 9.81 m/s²",
+      "W = 9.81 m/s² ÷ m"
+    ],
+    answer: 1,
+    why: "Weight is a force, so substitute W for F in F = ma. The acceleration is always gravity, so W = m · 9.81 m/s²."
+  },
+  {
+    topic: "second-law",
+    q: "A person has a mass of 45 kg. What is their weight?",
+    choices: ["45 N", "4.59 N", "441.45 N", "54.81 N"],
+    answer: 2,
+    why: "W = m · 9.81 = 45 · 9.81 = 441.45 N. Mass in kilograms goes in, weight in newtons comes out — the two are different quantities with different units."
+  },
+  {
+    topic: "second-law",
+    q: "An object with a mass of 1 kg weighs how much on Earth?",
+    choices: ["1 N", "9.81 N", "9.81 kg", "0.1 N"],
+    answer: 1,
+    why: "W = 1 kg · 9.81 m/s² = 9.81 N. This is the standard figure the packet uses to convert between kilograms of force and newtons."
+  },
+  {
+    topic: "second-law",
+    q: "Which of these is a mass, and which is a weight?",
+    choices: [
+      "Kilograms measure weight; newtons measure mass",
+      "Kilograms measure mass; newtons measure weight",
+      "Both measure the same thing",
+      "Newtons measure acceleration"
+    ],
+    answer: 1,
+    why: "Mass is in kilograms and is the quantity of matter. Weight is a force, measured in newtons, and you get it by multiplying mass by 9.81 m/s²."
+  },
+
+  /* ---------------- Resistance, Stress & Pressure ---------------- */
+  {
+    topic: "resistance",
+    q: "Resistance is best defined as:",
+    choices: [
+      "A force that disrupts motion",
+      "The mass of an object in motion",
+      "The speed at which an object falls",
+      "Another word for gravity"
+    ],
+    answer: 0,
+    why: "Resistance is a force that disrupts motion. It is what explains why two objects of the same mass can fall at different rates."
+  },
+  {
+    topic: "resistance",
+    q: "A crumpled sheet of paper falls faster than an identical flat sheet. Why?",
+    choices: [
+      "The crumpled ball has more mass",
+      "Gravity pulls harder on compact objects",
+      "The flat sheet meets more air resistance",
+      "The crumpled ball has more inertia"
+    ],
+    answer: 2,
+    why: "Gravity accelerates all matter at the same rate, and both sheets have the same mass. The only difference is air resistance, which acts more on the spread-out flat sheet."
+  },
+  {
+    topic: "resistance",
+    q: "Which is NOT one of the four types of resistance in the packet?",
+    choices: [
+      "Resistance of gases",
+      "Resistance of liquid",
+      "Gravitational resistance",
+      "Friction of solids"
+    ],
+    answer: 2,
+    why: "The four are gases (air), liquid (water), heat and electricity, and solids (friction). Gravity is a force, but it is not one of the four types of resistance."
+  },
+  {
+    topic: "resistance",
+    q: "The amount of air resistance on an object depends on:",
+    choices: [
+      "Only its mass",
+      "Its speed, size and shape",
+      "Only how far it has fallen",
+      "The temperature of the air"
+    ],
+    answer: 1,
+    why: "Speed, size and shape. The larger the object, the greater the air resistance — which is why holding more of your hand out a car window makes you feel more force."
+  },
+  {
+    topic: "resistance",
+    q: "A material that is a good resistor of heat is called:",
+    choices: ["A conductor", "An insulator", "A compressor", "A barometer"],
+    answer: 1,
+    why: "A good resistor of heat is an insulator, which is why insulation goes in walls and roofs. A poor resistor is a conductor — most metals conduct electricity well."
+  },
+  {
+    topic: "resistance",
+    q: "Why are fish shaped slim, flat and arched?",
+    choices: [
+      "To increase their mass",
+      "To eliminate some of the resistance of water",
+      "To reduce their weight",
+      "To increase friction with the water"
+    ],
+    answer: 1,
+    why: "Water resists motion, which is why walking quickly in water is hard. A fish's shape reduces that resistance."
+  },
+  {
+    topic: "resistance",
+    q: "Friction is an example of which type of resistance?",
+    choices: ["Gases", "Liquid", "Electrical", "Solids"],
+    answer: 3,
+    why: "Friction is the resistance of solids. Dragging heavy furniture across a floor is the packet's example — and the same friction between shoes and ground is what lets us walk."
+  },
+  {
+    topic: "resistance",
+    q: "If a cart is pulled with a force of 2 kg and does not move, the friction resisting it must be:",
+    choices: ["2 kg, or 19.62 N", "2 kg, or 9.81 N", "1 kg, or 9.81 N", "4 kg, or 39.24 N"],
+    answer: 0,
+    why: "If the cart does not move, the forces are balanced, so friction must equal the 2 kg pull. Converting to newtons: 2 · 9.81 = 19.62 N."
+  },
+  {
+    topic: "resistance",
+    q: "Terminal velocity is:",
+    choices: [
+      "The speed at which an object begins to fall",
+      "The highest velocity reached by a falling object",
+      "The acceleration of a falling object",
+      "The point at which a falling object stops moving"
+    ],
+    answer: 1,
+    why: "Terminal velocity is the highest velocity a falling object reaches. The object keeps falling at that speed — it just stops speeding up."
+  },
+  {
+    topic: "resistance",
+    q: "Why does a falling object stop accelerating once it reaches terminal velocity?",
+    choices: [
+      "Gravity stops acting on it",
+      "It runs out of energy",
+      "Air resistance has increased until it balances gravity",
+      "It has reached the ground"
+    ],
+    answer: 2,
+    why: "Air resistance increases as the object falls until it equals the pull of gravity. The forces are then balanced, and by the law of inertia balanced forces mean no change in motion."
+  },
+  {
+    topic: "resistance",
+    q: "An object falling at terminal velocity is:",
+    choices: [
+      "Speeding up at 9.81 m/s²",
+      "Slowing down",
+      "Falling at a constant velocity",
+      "Momentarily stopped in mid-air"
+    ],
+    answer: 2,
+    why: "It continues to fall, but at a constant, final velocity. Terminal velocity means no more acceleration, not no more motion."
+  },
+  {
+    topic: "resistance",
+    q: "Stress is defined as:",
+    choices: [
+      "An external force applied to an object",
+      "An internal force that resists a change in the form of a body",
+      "The weight of an object divided by its mass",
+      "The pressure of a gas in a container"
+    ],
+    answer: 1,
+    why: "Stress is internal. The force is applied from outside the body; the stress is the body resisting that change from within."
+  },
+  {
+    topic: "resistance",
+    q: "When does an object experience stress rather than simply moving?",
+    choices: [
+      "When the force tries to deform it instead of moving it",
+      "When the force is very large",
+      "Whenever it is at rest",
+      "Only when it breaks"
+    ],
+    answer: 0,
+    why: "If a force tries to deform a body rather than move it, the body is said to be under stress. Pulling, pressing and stretching all deform rather than displace."
+  },
+  {
+    topic: "resistance",
+    q: "A lamp hangs from a ceiling beam. The beam is under which kind of stress?",
+    choices: ["Compression", "Tension", "Shear", "Pressure"],
+    answer: 1,
+    why: "Tension is the result of a pulling force, and the hanging lamp pulls down on the beam. The chain holding the lamp is under tension too."
+  },
+  {
+    topic: "resistance",
+    q: "Pillars supporting the roof of a building are under which kind of stress?",
+    choices: ["Tension", "Shear", "Compression", "Terminal stress"],
+    answer: 2,
+    why: "Compression results from a pushing force, and the roof pushes down on the pillars."
+  },
+  {
+    topic: "resistance",
+    q: "Rubbing a blackboard eraser across a board puts its surface under which kind of stress?",
+    choices: ["Shear", "Tension", "Compression", "Atmospheric stress"],
+    answer: 0,
+    why: "Shear is due to forces acting along the surface of a body. The friction force acts along the eraser's surface as you rub."
+  },
+  {
+    topic: "resistance",
+    q: "How is stress calculated?",
+    choices: [
+      "Force × area",
+      "Force ÷ area",
+      "Area ÷ force",
+      "Force × mass"
+    ],
+    answer: 1,
+    why: "Stress = force ÷ area, because the whole area of the body resists the deforming force. That is why the units are force per unit area."
+  },
+  {
+    topic: "resistance",
+    q: "A 50 gram lamp hangs from a beam with a cross section of 25 square centimeters. What is the tension stress on the beam?",
+    choices: ["1250 g/cm²", "2 g/cm²", "0.5 g/cm²", "75 g/cm²"],
+    answer: 1,
+    why: "Stress = force ÷ area = 50 g ÷ 25 cm² = 2 grams per square centimeter."
+  },
+  {
+    topic: "resistance",
+    q: "An eraser with a surface area of 50 square centimeters is pushed with a 1 kilogram force. What is the shear stress?",
+    choices: ["50 kg/cm²", "51 kg/cm²", "1/50 kg/cm²", "1 kg/cm²"],
+    answer: 2,
+    why: "Stress = force ÷ area = 1 kg ÷ 50 cm² = one fiftieth of a kilogram per square centimeter, or 0.02 kg/cm²."
+  },
+  {
+    topic: "resistance",
+    q: "Water flows out of a hole anywhere in a barrel except the top. What does this show?",
+    choices: [
+      "Water is heavier than air",
+      "Liquids apply force over their entire container, not at one point",
+      "Gravity only pulls downward",
+      "The barrel is under tension"
+    ],
+    answer: 1,
+    why: "The forces of a liquid or gas do not act at any one point but over the entire area. That distributed force is what we call pressure, and it acts in all directions."
+  },
+  {
+    topic: "resistance",
+    q: "Pressure is best described as:",
+    choices: [
+      "A force acting at a single point",
+      "The force of a liquid or gas distributed over an entire area",
+      "The internal force resisting deformation",
+      "The weight of an object"
+    ],
+    answer: 1,
+    why: "Pressure is the force of a liquid or gas on an area, spread over the whole area rather than concentrated at one point. A force resisting deformation is stress, not pressure."
+  },
+  {
+    topic: "resistance",
+    q: "Where is atmospheric pressure greatest?",
+    choices: [
+      "At the top of the atmosphere",
+      "At sea level",
+      "On a mountain peak",
+      "It is the same everywhere"
+    ],
+    answer: 1,
+    why: "Atmospheric pressure is greatest at sea level and decreases outward from Earth, because pressure comes from the mass of air stacked above you."
+  },
+  {
+    topic: "resistance",
+    q: "Why are air molecules more closely packed near Earth's surface?",
+    choices: [
+      "The air is warmer there",
+      "Because of the pressure of the mass of air above them",
+      "Because Earth spins",
+      "They are not — they are farther apart near the surface"
+    ],
+    answer: 1,
+    why: "At high altitudes atoms and molecules are very far apart. Closer to Earth they are pressed together by the weight of all the air above, and more closely packed molecules exert greater force."
+  },
+  {
+    topic: "resistance",
+    q: "What force does the atmosphere exert at Earth's surface?",
+    choices: [
+      "10.1 newtons per square centimeter",
+      "9.81 newtons per square centimeter",
+      "1 newton per square centimeter",
+      "101 newtons per square centimeter"
+    ],
+    answer: 0,
+    why: "10.1 newtons per square centimeter at the surface, where atmospheric pressure is greatest. Don't confuse this with 9.81 m/s², which is the acceleration due to gravity."
+  },
+  {
+    topic: "resistance",
+    q: "Why does pressure increase as you go deeper underwater?",
+    choices: [
+      "Water becomes denser with depth",
+      "The amount of water above you gets larger",
+      "Water is compressible",
+      "Gravity is stronger at greater depths"
+    ],
+    answer: 1,
+    why: "As you go below the surface the amount of water above you increases, which increases the pressure on you. It is the same reasoning as atmospheric pressure being greatest at sea level."
+  },
+  {
+    topic: "resistance",
+    q: "Which of these is used to measure pressure?",
+    choices: ["A manometer", "A thermometer", "A spectrometer", "An odometer"],
+    answer: 0,
+    why: "The packet names three instruments: a manometer, a barometer, and an altimeter."
   }
 ];
