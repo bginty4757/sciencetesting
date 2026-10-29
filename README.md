@@ -10,6 +10,7 @@ Static site, no build step, no dependencies.
 3. Forces
 4. Newton's Second Law — F = ma, falling objects, weight
 5. Resistance, Stress & Pressure
+6. Chapter 4 Review — the review sheets worked through
 
 ---
 

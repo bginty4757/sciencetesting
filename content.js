@@ -534,6 +534,163 @@ const TOPICS = [
         callout: "Greatest at sea level, decreasing with altitude — because pressure comes from the weight of air above you."
       }
     ]
+  },
+
+  /* ---------------------------------------------------------------- */
+  {
+    id: "chapter4",
+    title: "Chapter 4 Review",
+    blurb: "The review sheets worked through — and the four traps that cost the most points.",
+    sections: [
+      {
+        heading: "The vocabulary puzzle",
+        body: [
+          "Every answer from the Chapter 4 puzzle. The hidden word reading down the shaded column is ACCELERATION, which completes the sentence at the bottom: Force equals acceleration times mass. That is F = ma written backwards — same equation, and a useful reminder that the order you multiply in doesn't matter."
+        ],
+        numbered: {
+          label: "All twelve answers",
+          items: [
+            { head: "Force equals MASS times acceleration.", text: "F = m · a." },
+            { head: "Newton's SECOND law of motion.", text: "A net force acting on an object causes it to accelerate in the direction of the force." },
+            { head: "Forces that are BALANCED.", text: "The law of inertia says that when forces are balanced, the motion of the object will not change." },
+            { head: "The unit of force is the NEWTON.", text: "1 N = 1 kg · 1 m/s²." },
+            { head: "Gravity causes FALLING objects to accelerate.", text: "At 9.81 m/s², no matter their mass." },
+            { head: "The object's WEIGHT.", text: "The force of gravity acting upon the mass of an object." },
+            { head: "The LARGER the force, the greater the acceleration.", text: "The other half: the larger the mass, the smaller the acceleration for the same force." },
+            { head: "AIR RESISTANCE.", text: "The force air exerts on a moving object. Two words." },
+            { head: "The force of GRAVITY.", text: "Weight is a measure of the force of gravity. Weight is the force; mass is the amount of matter — this blank wants the force." },
+            { head: "Any change in position is MOTION.", text: "Changing an object's motion is exactly what an unbalanced force does." },
+            { head: "In F = m × a, F stands for FORCE.", text: "m is mass in kilograms, a is acceleration in m/s²." },
+            { head: "TERMINAL velocity.", text: "The highest velocity reached by a falling object." }
+          ]
+        },
+        callout: "Hidden word: ACCELERATION. Force equals acceleration times mass."
+      },
+      {
+        heading: "Trap 1: the weightlifter problem",
+        body: [
+          "A weightlifter raises a 440 kg barbell with an acceleration of 2 m/s². How much force does the weightlifter exert on the barbell?",
+          "The answer is 880 N. F = m · a = 440 · 2 = 880 N. That is the whole problem.",
+          "The trap is reaching for 9.81. It is sitting right there in your notes, the problem is about lifting something heavy, and gravity feels like it must belong. But the question gives you a mass and an acceleration, and F = ma takes exactly those two numbers. Multiplying by 9.81 as well produces 8,630 — a number that means nothing, because mass × gravity × acceleration is not a quantity in physics.",
+          "The rule that keeps this straight: 9.81 is itself an acceleration. You use it when the problem does not give you one, because the object is simply falling or simply sitting there being weighed. The moment a problem hands you its own acceleration — 2 m/s², 3 m/s², 2.5 m/s² — that is the acceleration you use, and 9.81 stays out of it.",
+          "The same problem shows up on the reinforcement sheet with different numbers: a 200 kg barbell at 3 m/s² gives 200 · 3 = 600 N. No 9.81 anywhere."
+        ],
+        compare: {
+          left: { label: "Use W = m · 9.81", points: ["The question asks for weight", "Nothing is accelerating", "No acceleration is given in the problem", "Answer comes out in newtons"] },
+          right: { label: "Use F = m · a", points: ["The question asks for force", "Something is being pushed, pulled or lifted", "The problem gives you an acceleration", "Answer comes out in newtons"] }
+        },
+        callout: "One acceleration per problem. If the problem gives you one, use it and leave 9.81 alone."
+      },
+      {
+        heading: "Trap 2: stopping at the net force",
+        body: [
+          "A force of 10 N is needed to produce an acceleration of 2.0 m/s² on a 3.0 kg wooden block sliding across a table. What is the force of friction on the block, and in what direction?",
+          "Start with F = ma to find how much force is actually going into accelerating the block: 3.0 · 2.0 = 6 N. That 6 N is the net force — what's left over after friction has taken its cut.",
+          "But the question asks for friction, not net force. You are pushing with 10 N and only 6 N is producing acceleration, so friction must be eating the difference: 10 − 6 = 4 N. The direction is opposite the motion, backward along the table, because friction always opposes the motion that is happening.",
+          "The trap is that 6 N feels like an answer. It's a real number you calculated correctly, and it's easy to circle it and move on. It is an intermediate step. Read the question again before you circle anything."
+        ],
+        list: {
+          label: "The three forces in this problem",
+          items: [
+            "Applied force: 10 N forward — what you push with.",
+            "Net force: 6 N forward — what's actually accelerating the block (F = ma).",
+            "Friction: 4 N backward — the difference between them."
+          ]
+        },
+        callout: "Friction = applied force − net force. Always opposite the motion."
+      },
+      {
+        heading: "Trap 3: how fast is it going when it lands?",
+        body: [
+          "A flower pot falls from a 12th floor balcony and smashes on the ground 2.5 seconds later. How fast is it moving just before it hits?",
+          "A falling object gains 9.81 m/s of speed every second it falls. So multiply the acceleration by the time: v = g · t = 9.81 · 2.5 = 24.5 m/s.",
+          "Two traps here. The first is grabbing the wrong number for the time — the problem says 2.5 seconds, and using 2 gives 19.62 m/s, which looks plausible enough to slip past unnoticed. The second is thinking the 12th floor matters. It doesn't. The floor number is there to tell you the pot fell from somewhere high; the only numbers you need are the acceleration and the time.",
+          "Watch the units carefully, because this is where they get mixed up. The acceleration is 9.81 m/s² — per second squared. The answer is a speed, 24.5 m/s — per second. One second of falling gets you to 9.81 m/s, two seconds to 19.62 m/s, 2.5 seconds to 24.5 m/s."
+        ],
+        terms: [
+          { term: "Speed of a falling object", def: "v = g · t — the acceleration due to gravity multiplied by the time spent falling." }
+        ],
+        callout: "v = 9.81 × time. Use the time the problem gives you, and ignore the height."
+      },
+      {
+        heading: "Trap 4: when the question asks for mass",
+        body: [
+          "A dancer lifts his partner above his head with an acceleration of 2.5 m/s². The dancer exerts a force of 200 N. What is the mass of the partner?",
+          "This one gives you the force and asks for the mass, so rearrange: m = F ÷ a = 200 ÷ 2.5 = 80 kg.",
+          "There are only three ways to arrange F = ma, and which one you need depends entirely on which quantity is missing. Find the missing one first, then write the right version down before you touch the numbers."
+        ],
+        numbered: {
+          label: "The three arrangements",
+          items: [
+            { head: "Missing force → F = m · a", text: "Multiply mass by acceleration." },
+            { head: "Missing acceleration → a = F ÷ m", text: "Divide the force by the mass." },
+            { head: "Missing mass → m = F ÷ a", text: "Divide the force by the acceleration." }
+          ]
+        },
+        callout: "Force missing means multiply. Mass or acceleration missing means divide."
+      },
+      {
+        heading: "The written inquiry questions",
+        body: [
+          "Four of the inquiry questions ask you to explain rather than calculate. The ideas are from units 4 and 5 — these are the answers in the form the question wants."
+        ],
+        numbered: {
+          label: "What to say",
+          items: [
+            {
+              head: "Hitting a home run versus bunting.",
+              text: "A full swing applies a much larger force to the ball than a bunt does. By Newton's second law, the larger force produces a larger acceleration, so the ball leaves the bat much faster and travels much further. A bunt applies only a small force, so the ball barely accelerates and drops near the plate. Same ball, same mass — the only thing that changed is the force."
+            },
+            {
+              head: "Why a large mass weighs more than a small one.",
+              text: "Weight is the force of gravity on an object, W = m · 9.81. Gravity pulls with the same acceleration on everything, so the only thing that differs is the mass. Put a bigger mass into the formula and a bigger weight comes out. Saying it \"depends on gravity\" is only half the answer — it depends on the mass, through gravity."
+            },
+            {
+              head: "Why a heavy object doesn't fall faster than a light one.",
+              text: "This is the one to get word-perfect. Gravity does pull harder on the larger mass. But that larger mass also has more inertia, so it needs more force to accelerate it. The extra pull and the extra resistance increase by exactly the same amount and cancel out, so both objects accelerate at 9.81 m/s² and land together. It is not that gravity pulls the heavy object for longer — the time is the same. The two effects cancel."
+            },
+            {
+              head: "Why insects survive long falls.",
+              text: "An insect is tiny and light but has a large surface area for its weight, so air resistance builds up and balances gravity almost immediately. Its terminal velocity is therefore very low — it reaches it after falling a short distance and then falls the rest of the way at that slow, constant speed. It hits the ground no faster than if it had fallen a few centimetres, so it walks away."
+            }
+          ]
+        }
+      },
+      {
+        heading: "The reinforcement problems",
+        body: [
+          "Four problems on the reinforcement sheet, all of them F = ma in one of its three arrangements. Work them on paper first — the answers are here to check against, not to copy.",
+          "For each one, decide which quantity is missing before you do any arithmetic."
+        ],
+        numbered: {
+          label: "Answers to check against",
+          items: [
+            { head: "1000 kg car at 3 m/s² → 3000 N.", text: "Force is missing, so multiply. F = 1000 · 3 = 3000 N." },
+            { head: "70 kg swimmer pushing with 250 N → about 3.57 m/s².", text: "Acceleration is missing, so divide. a = 250 ÷ 70 = 3.57 m/s²." },
+            { head: "200 kg barbell at 3 m/s² → 600 N.", text: "Force is missing, so multiply. F = 200 · 3 = 600 N. No 9.81 — the problem gave you the acceleration." },
+            { head: "Dancer exerting 200 N at 2.5 m/s² → 80 kg.", text: "Mass is missing, so divide by the acceleration. m = 200 ÷ 2.5 = 80 kg." }
+          ]
+        },
+        callout: "Three of these four need a different arrangement of the same formula."
+      },
+      {
+        heading: "The six short-answer questions",
+        body: [
+          "The reinforcement sheet ends with six questions to answer in words. All six are straight from units 4 and 5."
+        ],
+        numbered: {
+          label: "Short answers",
+          items: [
+            { head: "What does Newton's second law state?", text: "A net force acting on an object causes the object to accelerate in the direction of the force." },
+            { head: "What two factors affect the rate of acceleration?", text: "The size of the force and the mass of the object." },
+            { head: "At what rate does gravity cause objects to accelerate?", text: "9.81 m/s²." },
+            { head: "What is air resistance?", text: "The force air exerts on a moving object, disrupting its motion." },
+            { head: "What three factors affect the amount of air resistance?", text: "The speed, the size, and the shape of the object." },
+            { head: "What is terminal velocity?", text: "The highest velocity reached by a falling object — once air resistance has grown until it balances gravity, the object stops accelerating and falls at a constant speed." }
+          ]
+        }
+      }
+    ]
   }
 ];
 
@@ -597,7 +754,20 @@ const FLASHCARDS = [
   { topic: "resistance", front: "How is stress calculated?", back: "Stress = force ÷ area. The units are force per unit area, such as grams or kilograms per square centimeter." },
   { topic: "resistance", front: "Pressure", back: "The force of a liquid or gas spread over an entire area rather than acting at one point. It acts in all directions." },
   { topic: "resistance", front: "Atmospheric pressure at sea level", back: "10.1 newtons per square centimeter — and it is greatest at sea level, decreasing with altitude." },
-  { topic: "resistance", front: "Three instruments that measure pressure", back: "A manometer, a barometer, and an altimeter." }
+  { topic: "resistance", front: "Three instruments that measure pressure", back: "A manometer, a barometer, and an altimeter." },
+
+  { topic: "chapter4", front: "When do you use 9.81, and when don't you?", back: "Use it when the problem gives you no acceleration — the object is falling or being weighed. If the problem gives you an acceleration, use that one instead and leave 9.81 out." },
+  { topic: "chapter4", front: "A weightlifter raises a 440 kg barbell at 2 m/s². Force?", back: "F = ma = 440 · 2 = 880 N. The acceleration is given, so 9.81 does not appear anywhere." },
+  { topic: "chapter4", front: "The three arrangements of F = ma", back: "Force missing: F = m · a. Acceleration missing: a = F ÷ m. Mass missing: m = F ÷ a." },
+  { topic: "chapter4", front: "How do you find friction from an applied force?", back: "Friction = applied force − net force. Find the net force with F = ma first, then subtract it from what you applied." },
+  { topic: "chapter4", front: "Which direction does friction act?", back: "Always opposite the motion." },
+  { topic: "chapter4", front: "Speed of a falling object after t seconds", back: "v = g · t = 9.81 × the time. A falling object gains 9.81 m/s of speed every second." },
+  { topic: "chapter4", front: "A pot falls for 2.5 seconds. How fast is it going?", back: "v = 9.81 · 2.5 = 24.5 m/s. The height it fell from is not needed." },
+  { topic: "chapter4", front: "The hidden word in the Chapter 4 puzzle", back: "ACCELERATION — \"Force equals acceleration times mass,\" which is F = ma written backwards." },
+  { topic: "chapter4", front: "Why doesn't a heavy object fall faster than a light one?", back: "Gravity pulls harder on it, but its greater mass also gives it more inertia. The two effects increase by the same amount and cancel, so both accelerate at 9.81 m/s²." },
+  { topic: "chapter4", front: "Why do insects survive long falls?", back: "They have a large surface area for their weight, so air resistance balances gravity almost at once. Their terminal velocity is very low, so they land slowly." },
+  { topic: "chapter4", front: "Home run versus bunt, in terms of the second law", back: "A swing applies a much larger force, so by F = ma the ball accelerates far more and travels further. A bunt applies a small force and barely accelerates the ball." },
+  { topic: "chapter4", front: "Why does a large mass weigh more than a small one?", back: "W = m · 9.81. Gravity's pull is the same for everything, so the only difference is the mass — a bigger mass in gives a bigger weight out." }
 ];
 
 /* ===========================================================================
@@ -1659,5 +1829,206 @@ const QUESTIONS = [
     choices: ["A manometer", "A thermometer", "A spectrometer", "An odometer"],
     answer: 0,
     why: "The packet names three instruments: a manometer, a barometer, and an altimeter."
+  },
+
+  /* ---------------- Chapter 4 Review ---------------- */
+  {
+    topic: "chapter4",
+    q: "A weightlifter raises a 440 kg barbell with an acceleration of 2 m/s². How much force does the weightlifter exert?",
+    choices: ["880 N", "4316 N", "8630 N", "220 N"],
+    answer: 0,
+    why: "F = m · a = 440 · 2 = 880 N. The problem hands you the acceleration, so 9.81 never enters. Multiplying by 9.81 as well gives 8630, which is mass × gravity × acceleration — not a real quantity."
+  },
+  {
+    topic: "chapter4",
+    q: "A weightlifter raises a 200 kg barbell with an acceleration of 3 m/s². How much force is used?",
+    choices: ["600 N", "1962 N", "5886 N", "66.7 N"],
+    answer: 0,
+    why: "F = m · a = 200 · 3 = 600 N. Same shape as the 440 kg problem — the acceleration is given, so use it and leave 9.81 alone."
+  },
+  {
+    topic: "chapter4",
+    q: "When should you use 9.81 m/s² in a force problem?",
+    choices: [
+      "In every force problem, since gravity is always acting",
+      "Only when the problem does not give you an acceleration of its own",
+      "Only when the object is moving upward",
+      "Whenever the object is heavy"
+    ],
+    answer: 1,
+    why: "9.81 is itself an acceleration. You use it when the problem gives you none — the object is falling or being weighed. If the problem provides an acceleration, that is the one that goes into F = ma."
+  },
+  {
+    topic: "chapter4",
+    q: "A problem gives you a mass and an acceleration and asks for force. How many numbers do you multiply?",
+    choices: [
+      "Three — mass, acceleration and 9.81",
+      "Two — mass and acceleration",
+      "Two — mass and 9.81",
+      "Three — mass, acceleration and the time"
+    ],
+    answer: 1,
+    why: "F = ma takes exactly two numbers. Bringing 9.81 in as well is the single most common way to wreck a problem that was otherwise set up correctly."
+  },
+  {
+    topic: "chapter4",
+    q: "A force of 10 N produces an acceleration of 2.0 m/s² on a 3.0 kg block. What is the force of friction on the block?",
+    choices: ["6 N", "4 N", "10 N", "16 N"],
+    answer: 1,
+    why: "First find the net force: F = ma = 3.0 · 2.0 = 6 N. That is what is actually accelerating the block. Friction is the difference between what you applied and that net force: 10 − 6 = 4 N. Stopping at 6 N answers a question that wasn't asked."
+  },
+  {
+    topic: "chapter4",
+    q: "A block slides to the right across a table. In which direction does friction act on it?",
+    choices: ["To the right, with the motion", "To the left, opposite the motion", "Downward", "Upward"],
+    answer: 1,
+    why: "Friction always opposes the motion that is happening. A question asking for a friction force usually wants the direction as well as the size."
+  },
+  {
+    topic: "chapter4",
+    q: "You push a box with 20 N. The net force on it is 12 N. What is friction?",
+    choices: ["32 N", "12 N", "8 N", "20 N"],
+    answer: 2,
+    why: "Friction = applied force − net force = 20 − 12 = 8 N, acting opposite the motion."
+  },
+  {
+    topic: "chapter4",
+    q: "A flower pot falls from a balcony and hits the ground 2.5 seconds later. How fast is it moving just before impact?",
+    choices: ["19.62 m/s", "24.5 m/s", "9.81 m/s", "2.5 m/s"],
+    answer: 1,
+    why: "v = g · t = 9.81 · 2.5 = 24.5 m/s. Using 2 seconds instead of 2.5 gives 19.62, which looks reasonable enough to slip past — read the time carefully."
+  },
+  {
+    topic: "chapter4",
+    q: "How do you find the speed of a falling object after a given time?",
+    choices: [
+      "Multiply 9.81 by the time",
+      "Divide 9.81 by the time",
+      "Multiply 9.81 by the height it fell",
+      "Multiply the mass by 9.81"
+    ],
+    answer: 0,
+    why: "v = g · t. A falling object gains 9.81 m/s of speed for every second it falls, so three seconds of falling gives 29.43 m/s."
+  },
+  {
+    topic: "chapter4",
+    q: "A pot falls from a 12th floor balcony for 2.5 seconds. Which number do you NOT need?",
+    choices: ["9.81 m/s²", "2.5 seconds", "The 12th floor", "All three are needed"],
+    answer: 2,
+    why: "The floor number only tells you it fell from somewhere high. v = g · t needs the acceleration and the time, nothing else."
+  },
+  {
+    topic: "chapter4",
+    q: "After falling for 1 second, how fast is an object moving?",
+    choices: ["1 m/s", "9.81 m/s", "9.81 m/s²", "19.62 m/s"],
+    answer: 1,
+    why: "v = 9.81 · 1 = 9.81 m/s. Note the units: the acceleration is 9.81 m/s², but a speed is in m/s."
+  },
+  {
+    topic: "chapter4",
+    q: "A dancer lifts his partner with an acceleration of 2.5 m/s², exerting a force of 200 N. What is the partner's mass?",
+    choices: ["500 kg", "80 kg", "20.4 kg", "202.5 kg"],
+    answer: 1,
+    why: "Mass is what's missing, so divide by the acceleration: m = F ÷ a = 200 ÷ 2.5 = 80 kg."
+  },
+  {
+    topic: "chapter4",
+    q: "If a problem asks for mass and gives you force and acceleration, you should:",
+    choices: [
+      "Multiply the force by the acceleration",
+      "Divide the force by the acceleration",
+      "Divide the acceleration by the force",
+      "Divide the force by 9.81"
+    ],
+    answer: 1,
+    why: "m = F ÷ a. Only one of the three quantities is ever missing — find which, then write the matching arrangement before doing any arithmetic."
+  },
+  {
+    topic: "chapter4",
+    q: "A 70 kg swimmer pushes off a wall with a force of 250 N. At what rate does the swimmer accelerate?",
+    choices: ["17,500 m/s²", "3.57 m/s²", "0.28 m/s²", "320 m/s²"],
+    answer: 1,
+    why: "Acceleration is missing, so divide: a = F ÷ m = 250 ÷ 70 = 3.57 m/s²."
+  },
+  {
+    topic: "chapter4",
+    q: "How much force is needed to accelerate a 1000 kg car at 3 m/s²?",
+    choices: ["333 N", "3000 N", "9810 N", "29,430 N"],
+    answer: 1,
+    why: "F = m · a = 1000 · 3 = 3000 N. The acceleration is given, so 9.81 is not involved."
+  },
+  {
+    topic: "chapter4",
+    q: "Why does a full swing send a baseball further than a bunt?",
+    choices: [
+      "The ball has less mass during a swing",
+      "The swing applies a larger force, so the ball accelerates more",
+      "A bunt changes the ball's mass",
+      "Gravity acts differently on a bunted ball"
+    ],
+    answer: 1,
+    why: "Same ball, same mass. By F = ma, the much larger force of a full swing produces a much larger acceleration, so the ball leaves the bat faster."
+  },
+  {
+    topic: "chapter4",
+    q: "Why does an object with a large mass weigh more than one with a small mass?",
+    choices: [
+      "Gravity pulls harder on larger objects than the formula suggests",
+      "W = m · 9.81, so a larger mass gives a larger weight",
+      "Larger objects have more air resistance",
+      "Larger objects have less inertia"
+    ],
+    answer: 1,
+    why: "Gravity's acceleration is the same for everything. The only thing that differs in W = m · 9.81 is the mass, so a bigger mass produces a bigger weight."
+  },
+  {
+    topic: "chapter4",
+    q: "Why does a heavy object NOT fall faster than a light one?",
+    choices: [
+      "Gravity pulls on the heavy object for a longer time",
+      "The heavy object has less inertia",
+      "The extra gravitational pull is exactly cancelled by the extra inertia",
+      "Air resistance pushes the heavy object back more"
+    ],
+    answer: 2,
+    why: "Gravity does pull harder on the larger mass, but that mass also resists acceleration more. The two increase by the same amount and cancel, so everything falls at 9.81 m/s². The time is identical for both — gravity does not pull one for longer."
+  },
+  {
+    topic: "chapter4",
+    q: "How can a small insect fall hundreds of meters and walk away unharmed?",
+    choices: [
+      "Gravity is weaker on very small objects",
+      "Its terminal velocity is very low, so it lands slowly",
+      "It has no mass worth speaking of",
+      "It accelerates at less than 9.81 m/s²"
+    ],
+    answer: 1,
+    why: "An insect has a large surface area for its weight, so air resistance balances gravity almost immediately. It reaches a very low terminal velocity and falls the rest of the way at that slow constant speed."
+  },
+  {
+    topic: "chapter4",
+    q: "\"Force equals ____ times mass\" — what completes the sentence?",
+    choices: ["Acceleration", "Gravity", "Velocity", "Weight"],
+    answer: 0,
+    why: "Force equals acceleration times mass — the hidden word in the Chapter 4 puzzle, and F = ma written in the other order. Multiplication works either way round."
+  },
+  {
+    topic: "chapter4",
+    q: "Weight is a measure of the force of:",
+    choices: ["Mass", "Gravity", "Inertia", "Acceleration"],
+    answer: 1,
+    why: "Weight is the force of gravity acting on an object's mass. Mass is the amount of matter; the force acting on it is gravity."
+  },
+  {
+    topic: "chapter4",
+    q: "In the equation F = m × a, what does m stand for, and in what unit?",
+    choices: [
+      "Motion, in meters",
+      "Mass, in kilograms",
+      "Mass, in newtons",
+      "Momentum, in m/s"
+    ],
+    answer: 1,
+    why: "m is mass, expressed in kilograms. Newtons are the unit of force, which is what F gives you."
   }
 ];
